@@ -8,12 +8,13 @@ function delaydisc_firstlevel_any_session(subject_id, session_id, run_list)
 %   to process only run 1: [1]
 %   to process only run 2: [2]
 %
-% This script runs a pipeline to analyze the ADAK delay discounting data
-% based on parameters determined by LS. The changes include:
+% This script runs a pipeline to analyze the RTO delay discounting data
+% based on parameters determined by LS. The pipeline includes:
 % - SPM masking threshold changed from 0.8 to 0.2
 % - Calculates contrasts for 'later gt now' and 'now gt later'
 % - Saves residuals if needed for AFNI analysis
-% - Saves output in folder 'adak_delaydisc_ls'
+% Changes from ADAK pipeline:
+% - Saves output in folder 'rto_delaydisc_ls'
 
 
 if nargin ~= 3 
@@ -22,11 +23,11 @@ end
 
 %% Study specific variables to specify data folders and SPM settings
 task_id='delaydisc';
-study_dir='/home/data/images/adak';                                     % main study directory
+study_dir='/home/data/images/rto';                                      % main study directory
 onset_dir=fullfile(study_dir, 'data', 'sourcedata', 'behav_data');      % directory with SPM onsets
 bids_dir=fullfile(study_dir,'data','bids_data');					    % bids data directory
 preproc_dir=fullfile(bids_dir, 'derivatives','fmriprep_3mm');		    % directory with preprocessed data
-output_dir=fullfile(bids_dir,'derivatives',['adak_' task_id '_ls']);    % analysis output directory for fmriprep 3mm data with LS analysis
+output_dir=fullfile(bids_dir,'derivatives',['rto_' task_id '_ls']);     % analysis output directory for fmriprep 3mm data with LS analysis
 
 n_vols='189';                           % each run should contain 189 volumes
 tr='2';                                 % repetition time = 2s
