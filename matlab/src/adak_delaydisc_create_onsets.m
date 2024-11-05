@@ -10,8 +10,7 @@
 % The SPM multiple condition onset.mat files are saved as DelayDiscount_sub-<subject id>_ses-<session_id>_Run<run_number>.mat
 %       Example output file: DelayDiscount_sub-266_ses-02_Run1.mat
 
-% home = '/Users/mchugom/Library/CloudStorage/OneDrive-TheUniversityofColoradoDenver/adak/delay_discounting/ADA DD Parsed Files';
-home='${HOME}/BrainStud Dropbox/BrainStud Team Folder/Subject Data/ADA-K Data/ADA-K Delay Discounting Data/ADA DD Parsed Files'
+% home='/path/to/parsed DD files'
 
 VariableNames = {'ExperimentName','Subject', 'Session', 'diff', 'choice', 'WaitForTrigger_RTTime', 'DelayTrial_OnsetTime', 'DelayTrial_RESP', 'DelayTrial_RT'};
 subjids = {'200.1', '200.2', '200.3', '200.4', '201.1', '201.2', '201.3', '201.4', '202.1', '202.2', '202.3', ... 
