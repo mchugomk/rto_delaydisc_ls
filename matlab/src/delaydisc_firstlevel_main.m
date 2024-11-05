@@ -104,12 +104,17 @@ matlabbatch{2}.spm.stats.fmri_est.method.Classical = 1;
 
 % contrasts
 matlabbatch{3}.spm.stats.con.spmmat(1) = cfg_dep('Model estimation: SPM.mat File', substruct('.','val', '{}',{2}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','spmmat'));
-matlabbatch{3}.spm.stats.con.consess{1}.tcon.name = 'later gt now';
-matlabbatch{3}.spm.stats.con.consess{1}.tcon.weights = [0.5 -0.5 0.5 -0.5];
+matlabbatch{3}.spm.stats.con.consess{1}.tcon.name = 'hard gt easy';
+matlabbatch{3}.spm.stats.con.consess{1}.tcon.weights = [-0.5 -0.5 0.5 0.5];
 matlabbatch{3}.spm.stats.con.consess{1}.tcon.sessrep = 'replsc';
-matlabbatch{3}.spm.stats.con.consess{2}.tcon.name = 'now gt later';
-matlabbatch{3}.spm.stats.con.consess{2}.tcon.weights = [-0.5 0.5 -0.5 0.5];
-matlabbatch{3}.spm.stats.con.consess{2}.tcon.sessrep = 'replsc';
+matlabbatch{3}.spm.stats.con.consess{2}.tcon.name = 'easy gt hard';
+matlabbatch{3}.spm.stats.con.consess{2}.tcon.weights = [0.5 0.5 -0.5 -0.5];
+matlabbatch{3}.spm.stats.con.consess{3}.tcon.name = 'later gt now';
+matlabbatch{3}.spm.stats.con.consess{3}.tcon.weights = [0.5 -0.5 0.5 -0.5];
+matlabbatch{3}.spm.stats.con.consess{3}.tcon.sessrep = 'replsc';
+matlabbatch{3}.spm.stats.con.consess{4}.tcon.name = 'now gt later';
+matlabbatch{3}.spm.stats.con.consess{4}.tcon.weights = [-0.5 0.5 -0.5 0.5];
+matlabbatch{3}.spm.stats.con.consess{4}.tcon.sessrep = 'replsc';
 matlabbatch{3}.spm.stats.con.delete = 1;
 
 
