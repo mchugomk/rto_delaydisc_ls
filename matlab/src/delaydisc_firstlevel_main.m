@@ -109,6 +109,7 @@ matlabbatch{3}.spm.stats.con.consess{1}.tcon.weights = [-0.5 -0.5 0.5 0.5];
 matlabbatch{3}.spm.stats.con.consess{1}.tcon.sessrep = 'replsc';
 matlabbatch{3}.spm.stats.con.consess{2}.tcon.name = 'easy gt hard';
 matlabbatch{3}.spm.stats.con.consess{2}.tcon.weights = [0.5 0.5 -0.5 -0.5];
+matlabbatch{3}.spm.stats.con.consess{2}.tcon.sessrep = 'replsc';
 matlabbatch{3}.spm.stats.con.consess{3}.tcon.name = 'later gt now';
 matlabbatch{3}.spm.stats.con.consess{3}.tcon.weights = [0.5 -0.5 0.5 -0.5];
 matlabbatch{3}.spm.stats.con.consess{3}.tcon.sessrep = 'replsc';
